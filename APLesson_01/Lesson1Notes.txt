@@ -1,0 +1,32 @@
+Kathy Wang
+Isabella Rivetti
+Period 5
+Notes_01
+
+Escape characters in Java
+Characters used to change the state of computers
+Escape Sequence
+Description
+\t
+Inserts a tab
+\b
+Inserts a backspace
+\n
+Inserts a new line
+\r
+Inserts a carriage return
+\f
+Inserts a formfeed
+\’
+Inserts a single quote
+\”
+Inserts a double quote
+\\
+Inserts a backslash character
+
+ASCII Art
+Graphic design technique that uses computer printable characters
+Utilizes 95 out of the 128 characters made standard in 1963
+Born because early printers lacked graphic quality
+Multiple kinds of ASCII art
+Can be animated
