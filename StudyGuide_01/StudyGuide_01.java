@@ -38,7 +38,7 @@ public static void main(String[]args)
 	String answer3 = k.nextLine();
 	System.out.println("Awe! " + answer3 + " is your favorite.");
 
-
+	System.out.println("Scanner.nextLine after a numerical input")
 	
 }
 }
