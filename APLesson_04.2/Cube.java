@@ -1,26 +1,28 @@
 import java.util.Scanner;
+
 public class Cube
+{
+	static double side;
+	static double sa;
+	
+	public static void main(String[]args)
 	{
-		static double side;
-		static double SA;
-	
-		public static void main(String[]args)
-		{
-			Scanner inputs = new Scanner(System.in);
-	
-			System.out.println("What is the length of a side?");
-			side = inputs.nextDouble();
-			
-			print(calcSA(side));
-		}
+		Scanner sidein = new Scanner(System.in);
 		
-		public static double calcSA(double s)
-		{
-			return 6 * s * s;
-		}
+		System.out.println("What is the side length of the cube?");
+		side = sidein.nextInt();
 		
-		public static void print(double sa)
-		{
-			System.out.printf("The SA or a cube with side lengths " + side + " is %5.5f", sa);
-		}
+		surfacearea();
+		print();
 	}
+	
+	public static double surfacearea()
+	{
+		return sa = 6*Math.pow(side,2);
+	}
+	
+	public static void print()
+	{
+		System.out.printf("The surface area of a cube with side lengths " + side + " is %10.5f", sa);
+	}
+}
