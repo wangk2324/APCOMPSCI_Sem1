@@ -41,6 +41,7 @@ public class Ex_02
 			receiptObject.format(item2, price2);
 			receiptObject.format(item3, price3);
 			receiptObject.format(item4, price4);
+			receiptObject.format("Total:", total);
 			System.out.println("\nDiscount:       " + totalDis);
 			System.out.println("_______________________");
 		}
