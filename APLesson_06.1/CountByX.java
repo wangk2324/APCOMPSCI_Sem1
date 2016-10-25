@@ -10,7 +10,7 @@ public class CountByX
 		System.out.println("Please enter the number to count up by:");
 		int cBy = numInputs.nextInt();
 		
-		for (int i = 1; i<= cUp; i += cBy)
+		for (int i = cBy; i<= cUp; i += cBy)
 		{
 			System.out.println(i);
 		}
