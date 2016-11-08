@@ -16,9 +16,9 @@ public class Cube
 		print();
 	}
 	
-	public static double surfacearea()
+	public static void surfacearea()
 	{
-		return sa = 6*Math.pow(side,2);
+		sa = 6*Math.pow(side,2);
 	}
 	
 	public static void print()

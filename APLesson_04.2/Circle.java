@@ -15,9 +15,9 @@ public class Circle
 		print();
 	}
 	
-	public static double calcArea()
+	public static void calcArea()
 	{
-		return area = (3.14159265359) * Math.pow(r, 2);
+		area = (3.14159265359) * Math.pow(r, 2);
 	}
 	
 	public static void print()

@@ -22,9 +22,9 @@ public class Rectangle
 		print();
 	}
 	
-	public static double calcPerim()
+	public static void calcPerim()
 	{
-		return perimeter = 2 * length + 2 * width;
+		perimeter = 2 * length + 2 * width;
 	}
 	
 	public static void print()
