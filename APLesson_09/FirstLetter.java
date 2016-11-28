@@ -13,10 +13,16 @@ public class FirstLetter
 			words[i] = kb.next();
 		}
 		
-		System.out.println("First Letters:");
-		for (String word : words)
-		{
-			System.out.println(word.charAt(0));
-		}
+		System.out.println("\nFirst Letters:");
+		
+		first(words);
+	}
+	public static String first(String[] wordz)
+	{
+		for (String word : wordz)
+			{
+				System.out.println(word.charAt(0));
+			}
+			return "";
 	}
 }

@@ -9,6 +9,7 @@ public class ReverseWord
 		String [] words = new String[5];
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please input five words:");
+		int numero = words.length;
 		
 		//fills the array
 		for (int i = 0; i < words.length; i++)
@@ -26,13 +27,18 @@ public class ReverseWord
 		
 		System.out.println("");
 		
-		System.out.println("Reversed:");		
-		for (int i = words.length - 1; i >= 0; i --)
+		System.out.println("Reversed:");
+		
+		reverse(words, numero);
+	}
+	
+	public static String reverse(String[] w, int num)
+	{	
+		for (int i = num - 1; i >= 0; i --)
 		{
-			newWord = words[i];
+			newWord = w[i];
 			System.out.println(newWord);
 		}
-		
-		
+		return "";
 	}
 }

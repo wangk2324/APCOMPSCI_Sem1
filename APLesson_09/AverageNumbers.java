@@ -20,10 +20,14 @@ public class AverageNumbers
 		}
 		System.out.println("");
 		
-		for (int num : numbers)
+		System.out.println("The average of the above numbers is: " + average(numbers));
+	}	
+	public static int average(int[] numz)
+	{
+		for (int num : numz)
 		{
 			sum += num;
 		}
-		System.out.println("The average of the above numbers is: " + (sum/numbers.length));
-	}	
+		return sum/numz.length;
+	}
 }
