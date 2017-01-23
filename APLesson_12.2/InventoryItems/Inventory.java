@@ -20,9 +20,9 @@ public class Inventory
 	{
 		manufacturer = man;
 		name = nam;
-		category = "undefined";
+		category = "UNDEFINED";
 		price = 0;
-		UPC = Math.abs((int)(Math.random() * 10000000000L) + 1);
+		UPC = Math.abs((long)(Math.random() * 10000000000L) + 1);
 	}
 	
 	public Inventory(String man, String nam, String cat, int p)
@@ -31,14 +31,14 @@ public class Inventory
 		name = nam;
 		category = cat;
 		price = p;
-		UPC = Math.abs((int)(Math.random() * 10000000000L) + 1);
+		UPC = Math.abs((long)(Math.random() * 10000000000L) + 1);
 	}
 	
 	public String toString()
 	{
 		return "\nInventory Items..." +
+							"\nItem Name: " + name +
 							"\nManufacturer: " + manufacturer +
-                            "\nItem Name: " + name +
                             "\nCategory: " + category +
                             "\nUPC: " + UPC +
 							"\nPrice: " + price;
