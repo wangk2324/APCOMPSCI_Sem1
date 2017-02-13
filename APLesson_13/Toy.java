@@ -1,8 +1,7 @@
 public abstract class Toy
 {
 	private String name;
-	private double count;
-	
+	private int count;
 	
 	//constructors
 	public Toy()
@@ -21,7 +20,7 @@ public abstract class Toy
 	{
 		this.name = n;
 	}
-	public void setCount(double c)
+	public void setCount(int c)
 	{
 		this.count = c;
 	}
@@ -31,7 +30,7 @@ public abstract class Toy
 	{
 		return name;
 	}
-	public double getCount()
+	public int getCount()
 	{
 		return count;
 	}
@@ -40,8 +39,8 @@ public abstract class Toy
 	public abstract String getType();
 	
 	//toString
-	public String toString()
+	/* public String toString()
 	{
-		return name + "\t...\t" + count;
-	}
+		return name + "..." + count;
+	} */
 }
