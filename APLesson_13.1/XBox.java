@@ -8,7 +8,7 @@ public class XBox extends Console
 	{
 		super(n);
 	}
-	public String getContoller()
+	public String getController()
 	{
 		return "XBox Wireless Contoller";
 	}

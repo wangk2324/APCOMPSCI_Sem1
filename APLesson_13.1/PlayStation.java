@@ -8,7 +8,7 @@ public class PlayStation extends Console
 	{
 		super(n);
 	}
-	public String getContoller()
+	public String getController()
 	{
 		return "PS DualShock 3";
 	}

@@ -39,8 +39,8 @@ public abstract class Toy
 	public abstract String getType();
 	
 	//toString
-	/* public String toString()
+	public String toString()
 	{
 		return name + "..." + count;
-	} */
+	}
 }
