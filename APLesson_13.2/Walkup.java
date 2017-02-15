@@ -5,8 +5,8 @@ public class Walkup extends Ticket
 		super();
 	}
 	
-	public int getPrice()
+	public double getPrice()
 	{
-		
+		return 50.00;
 	}
 }
