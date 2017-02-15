@@ -1,4 +1,4 @@
-public abstract class Advance extends Ticket
+public class Advance extends Ticket
 {
 	private int daysLeft;
 	
