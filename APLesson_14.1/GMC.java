@@ -1,6 +1,6 @@
 public class GMC extends Car
 {
-	private int coorx, coory;
+	private double coorx, coory;
 	
 	public GMC()
 	{
@@ -9,7 +9,7 @@ public class GMC extends Car
 		coory = 0;		
 	}
 	
-	public GMC(int x, int y)
+	public GMC(double x, double y)
 	{
 		super();
 		coorx = x;
