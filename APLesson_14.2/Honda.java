@@ -1,25 +1,19 @@
-public class GMC extends Car
+public class Honda extends Car
 {
 	private double coorx, coory;
 	
-	public GMC()
+	public Honda()
 	{
-		super();
 		coorx = 0;
 		coory = 0;		
 	}
 	
-	public GMC(double x, double y)
+	public Honda(double[] inpcoor)
 	{
 		super();
-		coorx = x;
-		coory = y;
-	}
-	
-	public void move(double x, double y)
-	{
-		coorx += x;
-		coory += y;
+		coorx = inpcoor[0];
+		coory = inpcoor[1];
+		move(coorx, coory);
 	}
 	
 	public double[] getLoc()

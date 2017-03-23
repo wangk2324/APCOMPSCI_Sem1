@@ -14,12 +14,7 @@ public class GMC extends Car
 		super();
 		coorx = x;
 		coory = y;
-	}
-	
-	public void move(double x, double y)
-	{
-		coorx += x;
-		coory += y;
+		move(x, y);
 	}
 	
 	public double[] getLoc()
