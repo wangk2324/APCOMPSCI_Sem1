@@ -27,10 +27,10 @@ public class Satellite
            printout += "\nDistance for " + l.getID() + ": (" + (Math.round(((getDistance(l.getLoc(), home)*100) + 1) * 100.0)/ 100.0)+ ")";
        }
 	   printout += "\n\n" + "==========================";
-		double x, y;
+		//double x, y;
         for (Location l : locate)
        {
-		   //double x, y;
+		   double x, y;
 		   x = Math.round(((Math.random()*100) + 1) * 100.0)/ 100.0;
 		   y = Math.round(((Math.random()*100) + 1) * 100.0)/ 100.0;
            printout += "\nAfter " + l.getID() + " Moved: (" + x + ", " + y + ")";

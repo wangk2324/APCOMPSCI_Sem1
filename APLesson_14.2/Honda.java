@@ -15,17 +15,4 @@ public class Honda extends Car
 		coory = inpcoor[1];
 		move(coorx, coory);
 	}
-	
-	public double[] getLoc()
-	{
-		double location[] = new double[2];
-		location[0] = coorx;
-		location[1] = coory;
-		return location;
-	}
-	
-	public int getID()
-	{
-		return ID;
-	}
 }

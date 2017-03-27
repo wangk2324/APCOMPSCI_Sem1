@@ -8,26 +8,17 @@ public class Toyota extends Car
 	private double coory;
 	
 	public Toyota()
-	{	
+	{
+		coorx = 0;
+		coory = 0;	
 	}
 	
 	public Toyota(String inp)
 	{
 		super();
 		ArrayList<String> coorz = new ArrayList<>(Arrays.asList(inp.split(", ")));
-		double x = Double.parseDouble(coorz.get(0));
-		double y = Double.parseDouble(coorz.get(1));
-		move(x,y);
-	}
-	
-	public double[] getLoc()
-	{
-		double[] location = {coorx, coory};
-		return location;
-	}
-	
-	public int getID()
-	{
-		return ID;
+		coorx = Double.parseDouble(coorz.get(0));
+		coory = Double.parseDouble(coorz.get(1));
+		move(coorx,coory);
 	}
 }
