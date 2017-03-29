@@ -53,12 +53,12 @@ public class Magpie2
 			response = "Tell me more about your pet.";	
 		}
 		
-		else if (findKeyword(statement, "robinette") >= 0)
+		else if (findKeyword(statement, "Robinette") >= 0)
 		{
 			response = "He sounds like a pretty dank teacher.";	
 		}
 		
-		else if (findKeyword(statement, "i want to") >= 0)
+		else if (findKeyword(statement, "I want to") >= 0)
 		{
 			response = transformIWantToStatement(statement);
 		}
@@ -112,7 +112,7 @@ public class Magpie2
 		int psn = findKeyword(statement, "I want to");
 		String restOfStatement = statement.substring(psn + 10, statement.length());
 		
-		return "What would it mean to" + restOfStatement + "?";
+		return "What would it mean to " + restOfStatement + "?";
 		
 	  /**
 	   * trim the statement
@@ -175,6 +175,7 @@ public class Magpie2
 	{
 		String phrase = "";
 		phrase = statement.toLowerCase().trim();
+		goal.toLowerCase();
 		//phrase.toLowerCase();
 		
 		int psn = 0;
@@ -241,7 +242,8 @@ public class Magpie2
 	private int findKeyword(String statement, String goal)
 	{
 		//set startPos to 0 if not specified
-		return findKeyword(statement, goal, 0);
+		String newg = goal.toLowerCase();
+		return findKeyword(statement, newg, 0);
 	}
 
 	/** getRandomResponse() method
