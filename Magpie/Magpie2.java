@@ -68,15 +68,20 @@ public class Magpie2
 		// Look for a two word (you <something> me)
 		// pattern
 		int psn = findKeyword(statement, "you", 0);
+		int psn2 = findKeyword(statement, "I", 0);
 
-			if (psn >= 0
-			&& findKeyword(statement, "me", psn) >= 0)
+			if (psn >= 0 && findKeyword(statement, "me", psn) >= 0)
 				{
 					response = transformYouMeStatement(statement);
 				}
+				
+			else if (psn2 >= 0 && findKeyword(statement, "you", psn) >= 0)
+				{
+					response = transformIYouStatement(statement);
+				}
 			else
 				{
-				response = getRandomResponse();
+					response = getRandomResponse();
 				}
 		}
 		return response;
@@ -137,8 +142,8 @@ public class Magpie2
 	{
 		statement.trim();
 		int stLength = statement.length();
-		
 		String lastChar = statement.substring(stLength - 1, stLength);
+		
 		if (lastChar.equals("."))
 		{
 			statement = statement.substring(0, stLength - 1);
@@ -168,6 +173,24 @@ public class Magpie2
 	   * */
 	}
 	
+	private String transformIYouStatement(String statement)
+	{
+		statement.trim();
+		int stLength = statement.length();
+		String lastChar = statement.substring(stLength - 1, stLength);
+		
+		if (lastChar.equals("."))
+		{
+			statement = statement.substring(0, stLength - 1);
+		}
+		
+		int psnOfI = findKeyword(statement, "I");
+		int psnOfYou = findKeyword(statement, "you", psnOfI + 1);
+		
+		String restOfStatement = statement.substring(psnOfI + 1, psnOfYou);
+		
+		return "Why do you" + restOfStatement + "me?";
+	}
 	
 	/** Ex_02: The findKeyword() Method...
 	 * ========================================================= */
@@ -175,7 +198,7 @@ public class Magpie2
 	{
 		String phrase = "";
 		phrase = statement.toLowerCase().trim();
-		goal.toLowerCase();
+		goal = goal.toLowerCase();
 		//phrase.toLowerCase();
 		
 		int psn = 0;
