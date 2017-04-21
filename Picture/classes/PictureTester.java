@@ -17,6 +17,30 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void testKeepOnlyBlue()
+  {
+	Picture beach = new Picture("beach.jpg");
+	beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();
+  }
+  
+  public static void testNegate()
+  {
+	Picture beach = new Picture("beach.jpg");
+	beach.explore();
+    beach.negate();
+    beach.explore();
+  }
+  
+  public static void testGrayscale()
+  {
+	Picture beach = new Picture("beach.jpg");
+	beach.explore();
+    beach.grayscale();
+    beach.explore(); 
+  }
+  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -26,12 +50,44 @@ public class PictureTester
     caterpillar.explore();
   }
   
+  public static void testMirrorVerticalRightToLeft()
+  {
+	Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+  
+  public static void testMirrorHorizontal()
+  {
+	Picture redMoto = new Picture("redMotorcycle.jpg");
+    redMoto.explore();
+    redMoto.mirrorHorizontal();
+    redMoto.explore();
+  }
+  
+  public static void testMirrorHorizontalBotToTop()
+  {
+	Picture redMoto = new Picture("redMotorcycle.jpg");
+    redMoto.explore();
+    redMoto.mirrorHorizontalBotToTop();
+    redMoto.explore();
+  }
+  
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
     Picture temple = new Picture("temple.jpg");
     temple.explore();
     temple.mirrorTemple();
+    temple.explore();
+  }
+  
+  public static void testMirrorArms()
+  {
+	Picture temple = new Picture("snowman.jpg");
+    temple.explore();
+    temple.mirrorArms();
     temple.explore();
   }
   
@@ -58,21 +114,21 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    //testKeepOnlyBlue();
+    // testZeroBlue();
+    // testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    //testNegate();
-    //testGrayscale();
+    // testNegate();
+    // testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
+    // testMirrorVertical();
     testMirrorTemple();
-    //testMirrorArms();
+    testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
+    //testCollage();
     //testCopy();
-    testEdgeDetection();
+    //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
@@ -80,5 +136,8 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+	// testMirrorVerticalRightToLeft();
+	// testMirrorHorizontal();
+	// testMirrorHorizontalBotToTop();
   }
 }
