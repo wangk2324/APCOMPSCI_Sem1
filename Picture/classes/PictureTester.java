@@ -85,10 +85,18 @@ public class PictureTester
   
   public static void testMirrorArms()
   {
-	Picture temple = new Picture("snowman.jpg");
-    temple.explore();
-    temple.mirrorArms();
-    temple.explore();
+	Picture snowman = new Picture("snowman.jpg");
+    snowman.explore();
+    snowman.mirrorArms();
+    snowman.explore();
+  }
+  
+  public static void testMirrorGull()
+  {
+	Picture gull = new Picture("seagull.jpg");
+	gull.explore();
+	gull.mirrorGull();
+	gull.explore();
   }
   
   /** Method to test the collage method */
@@ -96,6 +104,27 @@ public class PictureTester
   {
     Picture canvas = new Picture("640x480.jpg");
     canvas.createCollage();
+    canvas.explore();
+  }
+  
+  public static void testMyCollage()
+  {
+	Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();
+  }
+  
+  public static void testCopy()
+  {
+	Picture canvas = new Picture("koala.jpg");
+    canvas.copy(canvas, 60, 100);
+    canvas.explore();
+  }
+  
+  public static void testCopyPart()
+  {
+	Picture canvas = new Picture("koala.jpg");
+    canvas.copyPart(canvas, 60, 100, 70, 100);
     canvas.explore();
   }
   
@@ -122,13 +151,15 @@ public class PictureTester
     // testGrayscale();
     //testFixUnderwater();
     // testMirrorVertical();
-    testMirrorTemple();
-    testMirrorArms();
-    //testMirrorGull();
+    //  testMirrorTemple();
+    //  testMirrorArms();
+    //  testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
-    //testCopy();
-    //testEdgeDetection();
+    //   testCollage();
+    //   testCopy();
+	//   testMyCollage();
+	//   testCopyPart();
+    testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
