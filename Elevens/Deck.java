@@ -39,7 +39,8 @@ public class Deck {
 			cards.add(new Card(ranks[i], suit, values[i]));
 		}
 		size = cards.size();
-		//this.shuffle();
+		
+		cards.shuffle();
 	}
 
 
@@ -69,9 +70,11 @@ public class Deck {
 	 * Randomly permute the given collection of cards
 	 * and reset the size to represent the entire deck.
 	 */
-	//public void shuffle() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-	//}
+	public void shuffle() {
+		// /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+		Shuffler shfl = new Shuffler();
+		shfl.selectionShuffle(values);
+	}
 
 	/**
 	 * Deals a card from this deck.
