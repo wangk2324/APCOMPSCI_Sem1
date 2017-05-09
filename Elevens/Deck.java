@@ -36,11 +36,12 @@ public class Deck {
 		for (int i = 0; i < ranks.length; i++)
 		{
 			for (String suit : suits)
-			cards.add(new Card(ranks[i], suit, values[i]));
+			{
+				cards.add(new Card(ranks[i], suit, values[i]));
+			}
 		}
 		size = cards.size();
-		
-		cards.shuffle();
+		shuffle();
 	}
 
 
@@ -72,9 +73,13 @@ public class Deck {
 	 */
 	public void shuffle() {
 		// /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-		Shuffler shfl = new Shuffler();
-		shfl.selectionShuffle(values);
-	}
+		for( nt k = size - 1; k >= 0; k-- ) 
+		{
+            		int r = (int)(Math.random() * k);
+          	 	Card temp = cards.get(r);
+            		cards.set(r, cards.get(k));
+            		cards.set(k, temp);
+		}
 
 	/**
 	 * Deals a card from this deck.
@@ -83,7 +88,13 @@ public class Deck {
 	 */
 	public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		return cards.get(--size);
+		if (isEmpty()) 
+		{
+			return null;
+		}
+		size--;
+		Card csize = cards.get(size);
+		return csize;
 	}
 
 	/**
