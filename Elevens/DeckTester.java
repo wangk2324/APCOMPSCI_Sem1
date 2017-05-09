@@ -18,12 +18,19 @@ public class DeckTester {
 		System.out.println(deck1.toString());
 		System.out.println("Empty:" + deck1.deal());
 		System.out.println("Size:" + deck1.size());
+<<<<<<< HEAD
 		System.out.println("---------------------------------");
 		System.out.println("Deal:" + deck1.deal());
 	
 		//shuffle
 		System.out.println("---------------------------------");
 		System.out.println("Shuffle");
+=======
+		System.out.println("---------------------------------");
+		System.out.println("Deal:" + deck1.deal());
+	
+		//shuffle
+>>>>>>> origin/master
 		String[] ranks2 = new String[52];
         	String[] suits2 = new String[52];
         	int[] values2 = new int[52];

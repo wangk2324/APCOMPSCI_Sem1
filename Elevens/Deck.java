@@ -78,10 +78,17 @@ public class Deck {
 		{
             		int rand = (int)(Math.random() * k);
           	 	Card temp = cards.get(rand);
+<<<<<<< HEAD
             		cards.set(rand, cards.get(k));
             		cards.set(k, temp);
 		}
 	}
+=======
+            		cards.set(r, cards.get(k));
+            		cards.set(k, temp);
+		}
+
+>>>>>>> origin/master
 	/**
 	 * Deals a card from this deck.
 	 * @return the card just dealt, or null if all the cards have been
