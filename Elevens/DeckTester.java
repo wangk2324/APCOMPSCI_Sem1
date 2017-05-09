@@ -29,19 +29,19 @@ public class DeckTester {
 		{
             		String rank = "";
             		String suit = "";
-            		if ( (i+1) % 13 == 11 ) 
+            		if ((i+1) % 13 == 11) 
 	    		{
                 		rank = "Jack";
             		}
-            		else if ( (i+1) % 13 == 12 ) 
+            		else if ((i+1) % 13 == 12) 
 	    		{
                 		rank = "Queen";
             		}
-            		else if ( (i+1) % 13 == 0 ) 
+            		else if ((i+1) % 13 == 0) 
 	    		{
                 		rank = "King";
             		}
-            		else if ( (i+1) % 13 == 1 ) 
+            		else if ((i+1) % 13 == 1) 
 	    		{
                 		rank = "Ace";
             		}
