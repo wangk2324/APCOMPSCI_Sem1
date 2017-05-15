@@ -78,23 +78,19 @@ public class Deck {
 		{
             		int rand = (int)(Math.random() * k);
           	 	Card temp = cards.get(rand);
-<<<<<<< HEAD
             		cards.set(rand, cards.get(k));
             		cards.set(k, temp);
 		}
+		
+		size = cards.size();
 	}
-=======
-            		cards.set(r, cards.get(k));
-            		cards.set(k, temp);
-		}
-
->>>>>>> origin/master
 	/**
 	 * Deals a card from this deck.
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
+	public Card deal()
+	{
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 		if (isEmpty()) 
 		{
